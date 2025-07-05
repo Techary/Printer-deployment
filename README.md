@@ -5,8 +5,13 @@ The driver file.
 The filename of the driver file.  
   
 To obtain the driver information, download the driver installer to your computer.  
-Using nanazip, extract the .exe installer.  
+Using nanazip/7zip, extract the .exe installer.  
 Use printmanagement.msc to install the driver to your computer - this way you can find out which driver file contains the driver you need, and its name.  
+
+----
+
+In the Source for the intunewin:
+Put the extracted contents of the driver installer AND the printer_install.ps1 and printer_uninstall.ps1 files
   
 ----  
   
