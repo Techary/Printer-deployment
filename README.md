@@ -1,4 +1,5 @@
 NEEDED  
+-
 IP address of the printer - should be in Glue, confirm by browsing to the printer.  
   
 A name to call the Printer - this is what the printer calls itself in windows for the user eg "Main Office PR1"  
@@ -33,10 +34,12 @@ So, if you have "UniversalDriver.exe" extracted to "UniversalDriver" as a direct
   
 ----  
   
-Intune Win32 installation commands  
+During the creation of the intunewin, select the printer_install.ps1 script as the installer object (intunewin step 2)  
 
-DUring the creation of the intunewin, select the printer_install.ps1 script as the installer object (intunewin step 2)
-  
+---  
+
+Intune Win32 installation commands  
+-  
 Example Install command:  
 powershell.exe -noprofile -executionpolicy bypass -file .\\Printer_install.ps1 -PortName "IP_10.10.1.1" -PrinterIP "10.1.1.1" -PrinterName "Canon Printer Upstairs" -DriverName "Canon Generic Plus UFR II" -INFFile "CNLB0MA64.inf"  
   
