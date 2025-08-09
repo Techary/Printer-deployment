@@ -34,10 +34,10 @@ Put the extracted contents of the driver installer AND the !printer_install.ps1 
 Intune Win32 installation commands  
   
 Example Install command:  
-powershell.exe -noprofile -executionpolicy bypass -file .\!Printer_install.ps1 -PortName "IP_10.10.1.1" -PrinterIP "10.1.1.1" -PrinterName "Canon Printer Upstairs" -DriverName "Canon Generic Plus UFR II" -INFFile "CNLB0MA64.inf"  
+powershell.exe -noprofile -executionpolicy bypass -file .\\!Printer_install.ps1 -PortName "IP_10.10.1.1" -PrinterIP "10.1.1.1" -PrinterName "Canon Printer Upstairs" -DriverName "Canon Generic Plus UFR II" -INFFile "CNLB0MA64.inf"  
   
 Example Uninstall command:  
-powershell.exe -noprofile -executionpolicy bypass -file .\!Printer_uninstall.ps1 -PrinterName "Canon Printer Upstairs"  
+powershell.exe -noprofile -executionpolicy bypass -file .\\!Printer_uninstall.ps1 -PrinterName "Canon Printer Upstairs"  
   
 Detection:  
 Registry  
