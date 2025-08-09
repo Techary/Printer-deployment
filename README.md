@@ -27,7 +27,9 @@ Once you select one, it will show you the display name of the driver package eg 
 ----  
   
 In the Source for the intunewin:  
+
 Put the extracted contents of the driver installer AND the !printer_install.ps1 and !printer_uninstall.ps1 files  
+-
   
 ----  
   
