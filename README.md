@@ -26,14 +26,16 @@ Once you select one, it will show you the display name of the driver package eg 
   
 ----  
   
-In the Source for the intunewin:  
-
-Put the extracted contents of the driver installer AND the !printer_install.ps1 and !printer_uninstall.ps1 files  
--
+In the Source directory for the intunewin:  
+Put the extracted contents of the driver installer AND the printer_install.ps1 and printer_uninstall.ps1 files  
+-  
+So, if you have "UniversalDriver.exe" extracted to "UniversalDriver" as a directory - copy everything from the level that the driver file is on eg "CNLB0MA64.inf" and add to the source directory - PLUS the printer_install.ps1 and printer_uninstall.ps1 scripts.  
   
 ----  
   
 Intune Win32 installation commands  
+
+DUring the creation of the intunewin, select the printer_install.ps1 script as the installer object (intunewin step 2)
   
 Example Install command:  
 powershell.exe -noprofile -executionpolicy bypass -file .\\Printer_install.ps1 -PortName "IP_10.10.1.1" -PrinterIP "10.1.1.1" -PrinterName "Canon Printer Upstairs" -DriverName "Canon Generic Plus UFR II" -INFFile "CNLB0MA64.inf"  
